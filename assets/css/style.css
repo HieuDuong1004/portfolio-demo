@@ -294,7 +294,14 @@ section{
     border: 1px solid black;
 }
 .project-page .project-management .project-demo h5{
-    color: #252B27;
+    width: 70%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 1px solid #252B27;
+    background-color: green;
+    margin: 1rem auto;
+
 }
 .project-page .project-management .project-demo img{
     height: 300px;
