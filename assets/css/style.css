@@ -1,0 +1,390 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    /* width: 1280px; */
+    max-width: 1280px;
+    color: #252B27;
+}
+
+img{
+    width: 100%;
+}
+a {
+    text-decoration: none !important;
+    color:  #fff !important;
+}
+.header{
+    height: 50px;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    /* background-color: #42C86F; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #42C86F;
+    box-shadow: 10px 10px 20px 10px #76dc98 ;
+}
+.nav-bar .logo{
+    width: 50%;
+}
+.nav-bar .logo span{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 15%;
+    padding: 12px;
+}
+
+.nav-bar .menu{
+    padding: 12px 20px;
+    width: 50%;
+}
+.nav-bar .menu .menu-item{
+    width: 20%;
+}
+
+.nav-bar .menu .menu-item a{
+    margin-left: 3rem;
+    justify-content: center;
+}
+.nav-bar .menu .menu-item a:hover {
+    position: relative;
+}
+.nav-bar .menu .menu-item a::before{
+    content: "";
+    position: absolute;
+    top: 44%;
+    left: -1rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #FFC82D;
+}
+
+.scroll-top {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid rgb(74, 151, 239);
+    background-color: rgb(74, 151, 239);
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+}
+.scroll-top:hover{
+    background-color: #0a58ca;
+}
+.scroll-top svg {
+    width: 100%;
+}
+.scroll-top svg path{
+    color: white;
+}
+
+
+section{
+    width: 80%;
+    margin: 5% auto;
+}
+.home-page{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-page .home-content{
+    margin-top: 2rem;
+    width: 50%;
+}
+.home-page .home-content .heading{
+    width: 100%;
+
+}
+.home-page .home-content .profession{
+    width: 100%;
+    margin: 1rem 0px;
+}
+.home-page .home-content .description{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.home-page .home-content a.btn{
+    width: 10rem;
+    color: white;
+}
+
+.home-page .home-img{
+    width: 40%;
+    margin: auto;
+}
+
+.about-page{
+    width: 80%;
+    margin:  auto;
+}
+.about-page .about-title{
+    width: 100%;
+}
+.about-page .about-title h1{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+}
+.about-page .about-body{
+    width: 100%;
+    display: flex;
+}
+.about-page .about-body .about-img{
+    width: 50%;
+}
+.about-page .about-body .about-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.about-page .about-body .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 10%;
+
+}
+.about-page .about-body .about-content .about-description{
+    width: 100%;
+    height: 10rem;
+}   
+.about-page .about-body .about-content .about-experience{
+    width: 100px;
+    margin-right: 0.5rem;
+    background-color: #E7E7E7;
+}
+.about-page .about-body .about-content .about-experience .experience-item{
+    width: 100%;
+}
+
+.about-page .about-body .about-content .about-experience .experience-item .experience-title{
+    width: 100%;
+}
+.about-page .about-body .about-content .about-experience .experience-item .experience-content{
+    width: 100%;
+}
+.about-page .about-body .dowload-file{
+    margin-top: 2rem;
+    width: 10rem;
+    height: 37.33px;
+}
+.about-page .about-body .dowload-file a{
+    color: white;
+    justify-content: center;
+}
+
+
+/* start style skill page  */
+.skill-page {
+    width:80%;
+    margin:auto;
+}
+.skill-page .skill-title{ width: 100%;}
+.skill-page .skill-title h1{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+}
+.skill-page .skill-content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.skill-page .skill-content .skill-item{
+    width: 50%;
+    margin-bottom: 50px;
+}
+.skill-page .skill-content .skill-item h4.tech{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.skill-page .skill-content .skill-item .level{
+    height: 10px;
+    width: 80%;
+    border: 1px solid ;
+    position: relative;
+    background-color: gray;
+}
+.skill-page .skill-content .skill-item .level .success{
+    width: 80%;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+}
+.skill-page .skill-content .skill-item .level span{
+    width: 10%;
+    right: -50px;
+    bottom: -6px;
+    font-size: 0.8rem;
+    position: absolute; 
+}
+/* end style skill page  */
+
+
+/* start style project-page */
+
+.project-page{
+    width: 80%;
+    margin: auto;
+}
+.project-page .project-title{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.project-page .project-management{}
+.project-page .project-management .project-list{
+   
+}
+.project-page .project-management .project-list .project-item{
+    height: 12rem;
+    position: relative;
+}
+
+.project-page .project-management .project-list .project-item .line{
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid black;
+    z-index: -999999999;
+}
+.project-page .project-management .project-list .project-item .line .circle{    
+    position: absolute;
+    background: green;
+    border-radius: 50%;
+    height: 1rem ;
+    width: 1rem;
+    top: 0;
+    right: -0.5rem;
+}
+.project-page .project-management .project-list .project-item .project-item-content{
+    position: absolute;
+    left: 1rem;
+    top: 0;
+}
+.project-page .project-management .project-list .project-item .project-item-content .heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.project-page .project-management .project-list .project-item .project-item-content .technologies{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.project-page .project-management .project-demo{
+    width: 100%;
+    margin-top: 50px;
+}
+.project-page .project-management .project-demo .demo-title{
+    width: 100%;
+}
+.project-page .project-management .project-demo .demo-title h2{
+    text-align: center;
+    font-size: 1.5rem;
+    border: 1px solid black;
+}
+.project-page .project-management .project-demo h5{
+    color: #252B27;
+}
+.project-page .project-management .project-demo img{
+    height: 300px;
+    object-fit: cover;
+}
+.project-page .project-management .project-demo svg path{
+    color: #fff;;
+}
+/* end style project-page */
+
+/* start style contact page  */
+
+.contact-page{
+    width: 80%;
+    margin: auto;
+}
+.contact-page .contact-title{
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+.contact-page .contact-information{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+.contact-page .contact-information .contact-list{
+    width: 40%;
+    margin-right: 10%;
+}
+.contact-page .contact-information .contact-list .contact-item{
+    width: 100%;
+    display: flex;
+    flex-wrap: column;
+    margin-bottom: 1rem;
+}
+.contact-page .contact-information .contact-list .contact-item .icon {
+    width: 20%;
+    position: relative;
+}
+.contact-page .contact-information .contact-list .contact-item .icon svg{
+    top: 25%;
+    left: 25%;
+    position: absolute;
+}
+.contact-page .contact-information .contact-list .contact-item .content{
+    width: 80%;
+    padding-left: 1rem;
+}
+.contact-page .contact-information .contact-form{
+    width: 50%;
+}
+.contact-page .contact-information .contact-form form{
+}
+.contact-page .contact-information .contact-form form .form-group{
+    margin-bottom: 20px;
+}
+
+.contact-page .contact-information .contact-form form  .btnContact {
+    width: 60%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: green;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.contact-page .contact-information .contact-form form .btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* end style contact page  */
+
+/* opacity animation*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(3rem);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+  }
+  
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
