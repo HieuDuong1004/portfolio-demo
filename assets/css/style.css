@@ -13,6 +13,8 @@ a {
     text-decoration: none !important;
     color:  #fff !important;
 }
+
+/* start style nav-bar  */
 .header{
     height: 50px;
     position: relative;
@@ -20,7 +22,6 @@ a {
 .nav-bar{
     display: flex;
     /* background-color: #42C86F; */
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -63,7 +64,9 @@ a {
     border-radius: 50%;
     background-color: #FFC82D;
 }
+/* end style nav-bar  */
 
+/* style button scroll top  */
 .scroll-top {
     display: flex;
     width: 1.5rem;
@@ -85,6 +88,7 @@ a {
 }
 
 
+/* start style home page  */
 section{
     width: 80%;
     margin: 5% auto;
@@ -113,7 +117,7 @@ section{
 }
 
 .home-page .home-content a.btn{
-    width: 10rem;
+    width: 50%;
     color: white;
 }
 
@@ -121,7 +125,9 @@ section{
     width: 40%;
     margin: auto;
 }
+/* end style home page  */
 
+/* start style about page  */
 .about-page{
     width: 80%;
     margin:  auto;
@@ -158,8 +164,8 @@ section{
     height: 10rem;
 }   
 .about-page .about-body .about-content .about-experience{
-    width: 100px;
-    margin-right: 0.5rem;
+    width: 30%;
+    margin-right: 3%;
     background-color: #E7E7E7;
 }
 .about-page .about-body .about-content .about-experience .experience-item{
@@ -181,6 +187,7 @@ section{
     color: white;
     justify-content: center;
 }
+/* end style about page  */
 
 
 /* start style skill page  */
@@ -231,7 +238,6 @@ section{
 
 
 /* start style project-page */
-
 .project-page{
     width: 80%;
     margin: auto;
@@ -242,10 +248,6 @@ section{
     margin: 50px 0px;
 }
 
-.project-page .project-management{}
-.project-page .project-management .project-list{
-   
-}
 .project-page .project-management .project-list .project-item{
     height: 12rem;
     position: relative;
@@ -313,7 +315,6 @@ section{
 /* end style project-page */
 
 /* start style contact page  */
-
 .contact-page{
     width: 80%;
     margin: auto;
@@ -395,3 +396,102 @@ section{
     opacity: 1;
     transform: translateY(0);
 }
+
+/* responesive mobile */
+@media only screen and (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-bar .logo {
+      width: 100%;
+    }
+    .nav-bar .logo span{
+        margin-left: 0;
+    }
+    .nav-bar .menu {
+      width: 100%;
+      padding: 0;
+    }
+    .nav-bar .menu .menu-item {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .nav-bar .menu .menu-item a{
+        margin-left: 0;
+    }
+    .scroll-top {
+      bottom: 5%;
+      right: 5%;
+    }
+
+    .home-page {
+        margin: 200px auto 40px auto;
+        display: flex;
+    }
+    .home-page .home-img{
+        width:100%;
+        order: 1;
+    }
+    .home-page .home-content{
+        width: 100%;
+        order:2;
+        margin-bottom:1rem;
+    }
+    .home-page .btn{
+        margin-left: 25%;
+    }
+
+    .about-page .about-body{
+        width: 100%;
+        display: block;
+    }
+    .about-page .about-body .about-img{
+        width: 100%;
+    }
+    .about-page .about-body .about-img img{
+        width: 100%;
+        height: 300px;
+    }
+    .about-page .about-body .about-content{
+        width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+        display: flex;
+    }
+    .about-page .about-body .about-content .about-description{
+        height: 13rem;
+    }
+    .about-page .about-body .about-content .dowload-file{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .skill-page .skill-content .skill-item{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .project-page .project-management .project-list .project-item {
+        height: 20rem;
+        position: relative;
+    }
+
+    /* contact  */
+    .contact-page .contact-information{
+        display: block;
+        width: 100%;
+    }
+    .contact-page .contact-information .contact-form{
+        width: 100%;
+    }
+    .contact-page .contact-information .contact-list{
+        width: 100%;
+    }
+    .contact-page .contact-information .contact-list .contact-item:last-child svg{
+        margin-left: 25px;
+    } 
+  }

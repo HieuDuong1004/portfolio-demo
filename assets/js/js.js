@@ -11,13 +11,13 @@ scrollTop.addEventListener('click', function () {
     window.scrollTo(0, 0);
 });
 
-
-
 const fadeSections = document.querySelectorAll('.fade-in');
 function checkFadeSections() {
     for (let i = 0; i < fadeSections.length; i++) {
         const section = fadeSections[i];
+        // khoảng cách từ đỉnh của phần tử đến đỉnh của trình duyệt.
         const sectionTop = section.getBoundingClientRect().top;
+        // khoảng cách từ đáy của phần tử đến đỉnh của trình duyệt.
         const sectionBottom = section.getBoundingClientRect().bottom;
 
         // nếu phần tử nằm trong viewport, thêm class visible để kích hoạt animation
